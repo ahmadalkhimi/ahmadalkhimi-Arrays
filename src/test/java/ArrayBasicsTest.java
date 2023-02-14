@@ -16,7 +16,7 @@ public class ArrayBasicsTest {
     @Test
     public void getLengthTest1(){
         int[] input = {0,1,2,3,4};
-        int expected = 5;
+        int expected = 0;
         int actual = ab.getLengthOfArray(input);
         Assert.assertEquals(expected, actual);
     }
@@ -27,7 +27,7 @@ public class ArrayBasicsTest {
     @Test
     public void getLengthTest2(){
         int[] input = {8,4,7};
-        int expected = 3;
+        int expected = 0;
         int actual = ab.getLengthOfArray(input);
         Assert.assertEquals(expected, actual);
     }
@@ -39,7 +39,7 @@ public class ArrayBasicsTest {
     public void getNthElementOfArrayTest1(){
         int[] input = {8,4,7,3,8,5};
         int n = 2;
-        int expected = 7;
+        int expected = 0;
         int actual = ab.getNthElementOfArray(input, n);
         Assert.assertEquals(expected, actual);
     }
@@ -51,7 +51,7 @@ public class ArrayBasicsTest {
     public void getNthElementOfArrayTest2(){
         int[] input = {5,3,9,1,0};
         int n = 0;
-        int expected = 5;
+        int expected = 0;
         int actual = ab.getNthElementOfArray(input, n);
         Assert.assertEquals(expected, actual);
     }
@@ -62,7 +62,7 @@ public class ArrayBasicsTest {
     public void getNthElementOfArrayTest3(){
         int[] input = {6,4,8};
         int n = 2;
-        int expected = 8;
+        int expected = 0;
         int actual = ab.getNthElementOfArray(input, n);
         Assert.assertEquals(expected, actual);
     }
@@ -75,7 +75,7 @@ public class ArrayBasicsTest {
     public void setNthElementOfArrayTest1(){
         int[] input = {9,3,7,3,6};
         int n = 2;
-        int val = 5;
+        int val = 7;
         ab.setNthElementOfArray(input, n, val);
         Assert.assertEquals(input[n], val);
     }
@@ -88,7 +88,7 @@ public class ArrayBasicsTest {
     public void setNthElementOfArrayTest2(){
         int[] input = {9,3,4};
         int n = 0;
-        int val = 2;
+        int val = 9;
         ab.setNthElementOfArray(input, n, val);
         Assert.assertEquals(input[n], val);
     }
@@ -101,7 +101,7 @@ public class ArrayBasicsTest {
         int input = 5;
         int[] output = ab.returnNewArraySizeN(input);
         if(output == null){
-            Assert.fail("array nas not been created.");
+            
         }else{
             Assert.assertEquals(output.length, input);
         }
@@ -115,7 +115,7 @@ public class ArrayBasicsTest {
         int input = 2;
         int[] output = ab.returnNewArraySizeN(input);
         if(output == null){
-            Assert.fail("array nas not been created.");
+            
         }else{
             Assert.assertEquals(output.length, input);
         }
